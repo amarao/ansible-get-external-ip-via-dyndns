@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: George Shuklin
-  description: Set fact about machine: external (white) IPv4 address via opendns server.
+  description: Set fact about machine - external (white) IPv4 address via opendns server.
   license: BSD
   min_ansible_version: 1.2
   platforms:
