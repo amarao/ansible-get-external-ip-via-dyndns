@@ -1,0 +1,9 @@
+---
+- name: Detecting external IP via {{dns_selfip_resolver}}
+  shell: dig +short myip.opendns.com -t A @{{dns_selfip_resolver}}
+  register: external_ip
+  changed_when: False
+
+- name: Adding external IPv4 to fact list
+  set_fact:
+    external_ip: '{{external_ip.stdout_lines[0]}}'
