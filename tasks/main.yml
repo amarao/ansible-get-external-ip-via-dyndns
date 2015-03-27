@@ -1,5 +1,5 @@
 ---
-- name: Detecting external IP via {{dns_selfip_resolver}}
+- name: Detecting external IP
   shell: dig +short myip.opendns.com -t A @{{dns_selfip_resolver}}
   register: external_ip
   changed_when: False

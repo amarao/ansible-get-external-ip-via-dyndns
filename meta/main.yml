@@ -1,18 +1,32 @@
 ---
 galaxy_info:
   author: George Shuklin
-  description: Set up external (white) IP for server
-  company: your company (optional)
+  description: Set fact about machine: external (white) IPv4 address via opendns server.
   license: BSD
   min_ansible_version: 1.2
   platforms:
   - name: EL
     versions:
     - all
+  - name: GenericUNIX
+    versions:
+    - all
   - name: Fedora
     versions:
     - all
+  - name: SmartOS
+    versions:
+    - all
   - name: opensuse
+    versions:
+    - all
+  - name: Amazon
+    versions:
+    - all
+  - name: GenericBSD
+    versions:
+    - all
+  - name: FreeBSD
     versions:
     - all
   - name: Ubuntu
@@ -28,7 +42,5 @@ galaxy_info:
     versions:
     - all
   categories:
-  - cloud
-  - networking
   - system
 dependencies: []
